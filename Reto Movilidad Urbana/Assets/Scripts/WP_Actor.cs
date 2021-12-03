@@ -20,7 +20,7 @@ public class WP_Actor : MonoBehaviour
     void Start()
     {
         GameObject.Find ("Semaforo4").GetComponent<Renderer>().material = green;
-        StartCoroutine(GetRequest("http://127.0.0.1:5000/car3"));
+        StartCoroutine(GetRequest("http://127.0.0.1:5000/semaforo3"));
     }
 
     IEnumerator GetRequest(string uri)

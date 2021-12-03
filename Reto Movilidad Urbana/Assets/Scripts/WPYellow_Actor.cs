@@ -21,7 +21,7 @@ public class WPYellow_Actor : MonoBehaviour
     void Start()
     {
         GameObject.Find ("Semaforo1").GetComponent<Renderer>().material = red;
-        StartCoroutine(GetRequest("http://127.0.0.1:5000/car3"));
+        StartCoroutine(GetRequest("http://127.0.0.1:5000/semaforo3"));
     }
 
     IEnumerator GetRequest(string uri)
